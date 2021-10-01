@@ -1,0 +1,23 @@
+//
+//  QuotesCell.swift
+//  BreakingBadQuote
+//
+//  Created by Иван Гришин on 01.10.2021.
+//
+
+import UIKit
+
+class QuotesCell: UITableViewCell {
+    @IBOutlet var quoteLabel: UILabel!
+    @IBOutlet var authorLabel: UILabel!
+    @IBOutlet var seriesLabel: UILabel!
+    
+    
+    
+    func configure(with quoteArray: Quote) {
+        quoteLabel.text = "BICH"
+        authorLabel.text = quoteArray.author
+        seriesLabel.text = quoteArray.series
+    }
+    
+}

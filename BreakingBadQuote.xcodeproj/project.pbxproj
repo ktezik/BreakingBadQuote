@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42EEF1A2707297C005A96F6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42EEF192707297C005A96F6 /* Quote.swift */; };
 		F4464CDF27060308000E8916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4464CDE27060308000E8916 /* AppDelegate.swift */; };
 		F4464CE127060308000E8916 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4464CE027060308000E8916 /* SceneDelegate.swift */; };
 		F4464CE327060308000E8916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4464CE227060308000E8916 /* ViewController.swift */; };
 		F4464CE627060308000E8916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4464CE427060308000E8916 /* Main.storyboard */; };
 		F4464CE827060309000E8916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4464CE727060309000E8916 /* Assets.xcassets */; };
 		F4464CEB27060309000E8916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4464CE927060309000E8916 /* LaunchScreen.storyboard */; };
+		F4464CF327060828000E8916 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4464CF227060828000E8916 /* QuoteTableViewController.swift */; };
+		F4524DAF2707524600C69B42 /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4524DAE2707524600C69B42 /* QuotesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F42EEF192707297C005A96F6 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		F4464CDB27060308000E8916 /* BreakingBadQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBadQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4464CDE27060308000E8916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4464CE027060308000E8916 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		F4464CE727060309000E8916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4464CEA27060309000E8916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4464CEC27060309000E8916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4464CF227060828000E8916 /* QuoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewController.swift; sourceTree = "<group>"; };
+		F4524DAE2707524600C69B42 /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				F4464CE027060308000E8916 /* SceneDelegate.swift */,
 				F4464CE227060308000E8916 /* ViewController.swift */,
 				F4464CE427060308000E8916 /* Main.storyboard */,
+				F42EEF192707297C005A96F6 /* Quote.swift */,
+				F4464CF227060828000E8916 /* QuoteTableViewController.swift */,
+				F4524DAE2707524600C69B42 /* QuotesCell.swift */,
 				F4464CE727060309000E8916 /* Assets.xcassets */,
 				F4464CE927060309000E8916 /* LaunchScreen.storyboard */,
 				F4464CEC27060309000E8916 /* Info.plist */,
@@ -139,6 +148,9 @@
 			files = (
 				F4464CE327060308000E8916 /* ViewController.swift in Sources */,
 				F4464CDF27060308000E8916 /* AppDelegate.swift in Sources */,
+				F4524DAF2707524600C69B42 /* QuotesCell.swift in Sources */,
+				F4464CF327060828000E8916 /* QuoteTableViewController.swift in Sources */,
+				F42EEF1A2707297C005A96F6 /* Quote.swift in Sources */,
 				F4464CE127060308000E8916 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ivan.Grishin.BreakingBadQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ivan.Grishin.BreakingBadQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
