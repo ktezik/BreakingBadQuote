@@ -15,9 +15,11 @@ class QuotesCell: UITableViewCell {
     
     
     func configure(with quoteArray: Quote) {
-        quoteLabel.text = "BICH"
-        authorLabel.text = quoteArray.author
-        seriesLabel.text = quoteArray.series
+        guard let quoteArrayAuthor = quoteArray.author else { return }
+        guard let quoteArraySeries = quoteArray.series else { return }
+        quoteLabel.text = quoteArray.quote
+        authorLabel.text = "Автор: \(quoteArrayAuthor)"
+        seriesLabel.text = "Серия: \(quoteArraySeries)"
     }
     
 }

@@ -13,6 +13,7 @@ class QuoteTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 100
     }
 
     // MARK: - Table view data source
@@ -22,7 +23,7 @@ class QuoteTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellcell", for: indexPath) as! QuotesCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "polka", for: indexPath) as! QuotesCell
 
         let quoteArray = quotes[indexPath.row]
         cell.configure(with: quoteArray)
@@ -54,6 +55,9 @@ extension QuoteTableViewController {
             do {
                 self.quotes = try JSONDecoder().decode([Quote].self, from: data)
                 print(error?.localizedDescription ?? "\(self.quotes.count)")
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } catch let error {
                 print(error)
             }

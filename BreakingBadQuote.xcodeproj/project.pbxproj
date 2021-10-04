@@ -62,12 +62,12 @@
 		F4464CDD27060308000E8916 /* BreakingBadQuote */ = {
 			isa = PBXGroup;
 			children = (
+				F4464CF227060828000E8916 /* QuoteTableViewController.swift */,
+				F42EEF192707297C005A96F6 /* Quote.swift */,
 				F4464CDE27060308000E8916 /* AppDelegate.swift */,
 				F4464CE027060308000E8916 /* SceneDelegate.swift */,
 				F4464CE227060308000E8916 /* ViewController.swift */,
 				F4464CE427060308000E8916 /* Main.storyboard */,
-				F42EEF192707297C005A96F6 /* Quote.swift */,
-				F4464CF227060828000E8916 /* QuoteTableViewController.swift */,
 				F4524DAE2707524600C69B42 /* QuotesCell.swift */,
 				F4464CE727060309000E8916 /* Assets.xcassets */,
 				F4464CE927060309000E8916 /* LaunchScreen.storyboard */,
